@@ -49,17 +49,40 @@ body.index {
     box-shadow: 0 0 10px rgba (0, 0, 0,0.1);
     border-radius: 10px;
     text-align: center;
+    background-color: burlywood;
 }
 .profile-pic img{
-    border-radius: 70%;
+    border-radius: 60%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin-bottom: 20px;
     border: 5px solid;
+    display: block;
+    justify-content: center;
+    float: inline-start;
 }
-.about h1{
-    font-size: 2em;
+ h2{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color:brown ;
+
+
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-display:inherit ;
+    justify-content: center;
+}
+ul{
+    list-style-type:disc;
+    list-style-position:unset;
+}
+a{
+    text-decoration:none ;
+    display: block;
 }
 
 .form{
@@ -67,16 +90,47 @@ body.index {
     background-color: #f4f4f4;
     display: block;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    flex-direction: column;   
 }
 .form-container{
     background-color: #ffffff;
+    padding: 30px;
+}
+.form h3{
+    text-align: center;
+}
+label {
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+img{
+    border-radius: 20%;
+    
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 20px;
+    
 }
 
 
 
-body.media div{
 
+
+.media div{
+    background-color: antiquewhite;
+    padding: 150px;
+    margin: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+}
+h3{
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    color:chocolate;
 }
 @media (max-width: 360px){
     img{
@@ -106,6 +160,17 @@ body.media div{
     }
 
     }
+    audio, video {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    video{
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+    }
+
+    
 
     body.table{
         font-family: Arial, sans-serif;
@@ -126,7 +191,7 @@ body.media div{
         color: #333;
     }
 
-    tr :nth-child(odd){
+    tr :nth-child(){
         background-color: #f9f9f9;
     }
     tr:hover {
@@ -138,4 +203,5 @@ body.media div{
         padding-top: 10px;
         font-size: 1.2em;
         font-weight: bold;
+        
     }
